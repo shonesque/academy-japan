@@ -91,6 +91,47 @@ input:focus {
 .bg-gray {
     background: url(../images/dot.png) repeat, #ededed;
 }
+/* ====================== Welcome Message =========================== */
+
+.welcome-msg-wrap {
+    background: #fff;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px 20px 20px 250px;
+    position: relative;
+}
+
+.welcome-msg-gray {
+    padding: 40px;
+}
+
+.cache-text {
+    font-weight: 600;
+    color: #000;
+}
+
+.welcome-msg-wrap p.left-text {
+    margin-left: 60px;
+}
+
+.welcome-msg-wrap p {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.welcome-msg-wrap h3 {
+    font-size: 26px;
+    color: #0067df;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.welcome-msg-wrap img {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    max-width: 200px;
+}
 
 /* ====================== Top nav section =========================== */
 

@@ -229,6 +229,23 @@ input:focus {
     top: 10px;
 }
 
+/* ===================== New Course Catalog ===================== */
+
+.coursecatalog{
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.coursecard{
+    width: 500px;
+    height: 300px;
+    background-color: #0067df;
+
+}
+
+
 /* ===================== Banner ===================== */
 
 .page-banner {

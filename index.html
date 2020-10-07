@@ -9,8 +9,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap"
     rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
 
 
 
@@ -26,107 +28,228 @@
     <!-- End of header -->
     <!-- =============================== Important Notification ================================ -->
     <section class="bg-gray welcome-msg-gray">
-        <div class="welcome-msg-wrap">
-            <img src="https://s3.amazonaws.com/crdownload/crcloud/pages/11218/1/en-us/images/welcome.png">
-            <h3>お知らせ</h3>        
-            <p class="cache-text">2020年3月31日以前よりご利用されていた方へ</p>
-            <p>新システムにて初回ログインの際は、表示不具合等の発生を回避するため</br>ブラウザーのキャッシュをクリア・クッキーの削除を行った後にログインすることを推奨致します</p>
-            <p>UiPathアカデミーのトレーニング・新規プラットフォームに関するご質問は</br><a href="https://www.uipath.com/ja/academy/faq" target="_blank">こちら</a> のFAQページをご確認ください</p>
+        <div class="jpheaderwrap">
+            <div id="introtext">
+                <span class="red-line"></span>
+                <h3>UiPathアカデミーへようこそ！</h3>
+                <p>RPA導入・開発・運用に必要な知識を習得できるコースを​</br>
+                    完全無料で提供しています​</br></br>
+                    UiPathアカデミーの活用方法を動画で確認しましょう</br>​</br>
+                    ご利用に関するよくあるご質問は​<a target="_blank" rel="noopener noreferrer"
+                        href="https://www.uipath.com/ja/academy/faq">Q&A</a>をご確認ください</p>
+            </div>
+            <div id="introvid">
+                <iframe width="340" height="190" src="https://www.youtube.com/embed/v6vyO7l3D3A" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </section>
-    <!-- End of Important Notification -->    
+    <!-- End of Important Notification -->
     <!-- =============================== Card ================================ -->
+    <section class="coursecatalogheader">
+        <div class="coursecatalogintro">
+            <h3>
+                充実した学習コース
+            </h3>
+        </div>
+    </section>
+
     <section class="coursecatalog">
-        <div class="coursecard">
-            StudioX​
-        </div>
-        <div class="coursecard">
-            StudioX​
-        </div>
-        <div class="coursecard">
-            StudioX​
-        </div>
-        <div class="coursecard">
-            StudioX​
-        </div>
-        <div class="coursecard">
-            StudioX​
-        </div>
-        <div class="coursecard">
-            StudioX​
-        </div>
-        <div class="coursecard">
-            StudioX​
-        </div>
-        <div class="coursecard">
-            StudioX​
+        <div class="coursecontainer">
+            <div class="coursecard introcourse">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=uWjLLnKJfXE_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>RPA 概論コース</h4>
+                        <div class="coursecardicon2">
+                            <img src="images\icon_rpa_starter.png" width="40px" height="40px">
+                        </div>
+                        <p></br>RPAに興味がある全ての方向け</br>RPA 概要・事例・導入の基礎を学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard nyuumon">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=fZA7XbDatJU_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>UiPath Studio 開発入門コース</h4>
+                        <div class="coursecardicon2">
+                            <img src="images\icon_nyumon.png" width="35px" height="35px">
+                        </div>
+                        <p></br>RPA に興味がある全ての方向け</br>
+                            UiPath Studio を使用した開発を体験</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard studiox">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=io5JIiYasgw_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>UiPath StudioX 開発コース</h4>
+                        <div class="coursecardicon2">
+                            <img src="images\icon_studiox.png" width="40px" height="40px">
+                        </div>
+                        <p></br>デスクトップ上の作業を自動化したい方向け</br>StudioX を使用した開発方法を学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard beginner">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=XZadDhhvte0_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>UiPath Studio 開発 初級コース</h4>
+                        <div class="coursecardicon2">
+                            <img src="images\icon_syokyu.png" width="35px" height="35px">
+                        </div>
+                        <p></br>RPA デベロッパー向け</br>
+                            自動化プロジェクト開発の必須知識を学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard intermediate">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=KlacBOygAYk_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>UiPath Studio 開発中級コース</h4>
+                        <div class="coursecardicon2">
+                            <img src="images\icon_studiochukyu.png" width="35px" height="35px">
+                        </div>
+                        <p>RPA デベロッパー向け</br>
+                            安定的かつ保守しやすい</br>自動化プロジェクトの開発を学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard orchestrator">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=IgKGaTVrUGc_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>UiPath Orchestrator コース</h4>
+                        <div class="coursecardicon2">
+                            <img src="images\icon_orchestrator.png" width="35px" height="35px">
+                        </div>
+                        <p></br>RPA デベロッパー・Orchestrator 運用者向け</br>
+                            Robotの管理・キュー・アセットを学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard reframework">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=mBK37ebKlyY_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>REFramework 概論コース</h4>
+                        <div class="coursecardicon">
+                            <img src="images\icon_reframework.png" width="28px" height="35px">
+                        </div>
+                        <p>RPA デベロッパー</br>ソリューションアーキテクト向け</br>
+                            開発フレームワークの基礎を学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard advanced">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=4VN77S+184I_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">
+                    <div class="coursecardfont">
+                        <h4>UiPath Studio 開発上級コース</h4>
+                        <div class="coursecardicon">
+                            <img src="images\icon_advanced.png" width="28px" height="35px">
+                        </div>
+                        <p>RPA デベロッパー</br>ソリューションアーキテクト向け</br>
+                            REFramework を使用した開発方法を学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard optional">
+                <a href="https://academy.uipath.com/DirectLaunch?cid=mXS2ZsEuBno_&io=tgpwv6P5Xm0_&md=nNLApdJeWJI_">
+                    <div class="coursecardfont">
+                        <h4>RPAデベロッパー向け</br>
+                            オプショナルコース</h4>
+                        <div class="coursecardicon">
+                            <img src="images\icon_option.png" width="35px" height="35px">
+                        </div>
+                        <p>UiPath Studio を使用した</br>様々な開発知識を学習</p>
+                    </div>
+                </a>
+            </div>
+            <div class="coursecard businessanalyst">
+                <div class="coursecardfont">
+                    <h4>ビジネスアナリストコース</h4>
+                    <div class="coursecardicon">
+                        <img src="images\icon_business.png" width="35px" height="35px">
+                    </div>
+                    <p></br>業務整理 ＆ 改善方法</br>RPA 導入手法を学びたい方向け</br>
+                        2020年11月末頃リリース予定</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- End of cards -->
-    <!-- =============================== Course Catalog ================================ -->
-    <section class="bg-gray">
-        <div class="container">
-            <div class="course-catalog-header">
-                <span class="red-line"></span>
-                <h2 class="text-dark">UiPath アカデミーの豊富なトレーニングコース一覧を見る</h2>
-                <p class="col-lg-6">RPA初心者の方から、認定資格を目指すレベルの方まで幅広く、RPA開発に必要な知識やRPA推進のために必要な知識を習得できるコースで、無料かつ何度でも学習することができます</p>
-                <div class="col-lg-12 pr-0 pl-0 start-right">
-                    <a href="" class="start-btn font_14">コース概要一覧へ</a>
-                </div>
+    <!-- =============================== Webinar ================================ -->
+    <!-- <section class="webinarsection">
+        <div class="webinarleft">
+            <div class="webinarimage">
+                <img src="images\robot.png" width="100px" height="84px">
             </div>
         </div>
-    </section>
-    <!-- End of Course Catalog -->
-    <!-- =============================== Course Catalog Tabs ================================ -->
-    <section>
-        <div class="container">
-            <div class="row pad-tb-60">
-                <div class="col-md-4 mb-3 tab-right">
-                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#developerFoundation" 
-                                role="tab" aria-controls="home" aria-selected="true">UiPath StudioX​</br>開発コース</a>
-                        </li><!-- uipathStudioXJP -->
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#developerFoundation" 
-                                role="tab" aria-controls="home" aria-selected="true">RPAスターター​</br> ~はじめてのUiPath Studio~</a>
-                        </li><!-- rpaStarterJP -->
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#developerFoundation"
-                                role="tab" aria-controls="home" aria-selected="true">RPAデベロッパー </br>基礎プログラム</a>
-                        </li> <!-- developerFoundationJP -->
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#developerFoundation" 
-                                role="tab" aria-controls="home" aria-selected="true">RPAデベロッパー </br>上級プログラム</a>
-                        </li><!-- developerAdvancedJP -->                        
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#developerFoundation" 
-                                role="tab" aria-controls="home" aria-selected="true">RPAデベロッパー </br>オプショナルコース</a>
-                        </li><!-- developerOptionJP -->  
-                    </ul>
+        <div class="webinarcenter">
+            <div class="webinartitle">
+                <h3>RPA導入における役割別　スキル学習 ウェビナーにて配信中</h3>
+            </div>
+            <div class="webinarinfo">
+                <h5>UiPath メソドロジーに基づいたプロジェクト進行における役割に必要なスキルをウェビナーで学習します</h5>
+                <h6></br></br>※<a href="https://www.uipath.com/ja/solutions/whitepapers/uipath-methodology">UiPath メソドロジー</a>
+                    とは、UiPath導入の標準的なガイドラインを指します
+                    RPAプロジェクトにおける役割の詳細は「RPA概論コース」をご参照ください</h6>
+            </div>
+        </div>
+        <div class="webinarright">
+            <div class="webinarbutton">
+                <a href="https://academy.uipath.com/uipath/DirectLaunch?cid=4r6qm9raSkA_&io=tgpwv6P5Xm0_&md=nNLApdJeWJI_">
+                    <img src="images\buttonwebinar.png" width="150px" height="35px">
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- End of Webinar -->
+    <!-- =============================== Carousel ================================ -->
+    <section class="carouselsection">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="curriculumhead">
+                        <div class="curriculumexplanation">
+                            <h2>RPA開発初心者の方へ お勧めコース</h2>
+                            <!-- <img src="images/wakaba.png" width="35px" height="35px"> -->
+                        </div>
+                        <p></br>まずは、<a href="https://academy.uipath.com/DirectLaunch?cid=uWjLLnKJfXE_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">「RPA概論コース」</a>から始めましょう！</br> UiPath Studio ユーザーは、<a href="https://academy.uipath.com/DirectLaunch?cid=fZA7XbDatJU_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">「UiPath Studio 開発入門コース」</a> UiPath StudioX
+                            ユーザーは、<a href="https://academy.uipath.com/DirectLaunch?cid=io5JIiYasgw_&io=tgpwv6P5Xm0_&md=IS2TIgXikDA_">「UiPath StudioX 開発コース」</a>にて学習しましょう！
+                        </p>
+                    </div>
+                    <div class="curriculumbottom">
+                        <div class="curriculumbottomdiv">
+                            <a class="popup" href="images/careermap.png">
+                                <img src="images/careermap.png">
+                            </a>
+                        </div>
+                        <div class="curriculumbottomexplanation">
+                            UiPath Studioにて開発を行うRPAデベロッパー向けには２つのプログラム<a href="https://academy.uipath.com/DirectLaunch?cid=PBZ1mJl4VvY_&io=tgpwv6P5Xm0_&md=nNLApdJeWJI_">「基礎」</a>・<a href="https://academy.uipath.com/DirectLaunch?cid=lLywP2mxj5I_&io=tgpwv6P5Xm0_&md=nNLApdJeWJI_">「上級」</a>があります
+                        </div>
+                    </div>
+                    
                 </div>
-                <!-- /.col-md-4 -->
-                <div class="col-md-8">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="businessanalyst" role="tabpanel"
-                            aria-labelledby="home-tab">
-                            <div class="tab-text">
-                                <span class="red-line"></span>
-                                <h2 class="text-dark">RPA でキャリアを広げましょう</h2>
-                                <p>UiPathアカデミーは、UiPath 製品の基本的な使用方法から応用まで、さまざまな学習プログラムを提供し、あなたのキャリアパスを応援します ​</p>
-                                <p></p>
-                                <img src="images/CurriculumJP.png" width="100%" height="100%"></img>
-                                <div class="col-lg-12 pr-0 pl-0 mt-30">
-                                    <a href="" class="start-btn">学習プログラムをご覧ください</a>
-                                </div>
-                            </div>
+                <div class="swiper-slide">
+                    <div class="catalogleftdiv">
+                        <div>
+                            <a href="">
+                                <img src="images\training_catalog.png">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
+
     </section>
-    <!-- End of Course Catalog tab -->
+    <!-- End of Carousel -->
     <!-- =============================== Resource Page ================================ -->
     <section class="bg-gray">
         <div class="container">
@@ -148,7 +271,8 @@
                 <span class="red-line"></span>
                 <h2 class="text-dark">お困りですか？</h2>
                 <p>UiPathアカデミーの一般的なご質問は、<a href="https://www.uipath.com/ja/academy/faq">FAQ</a>をご確認ください</p>
-                <p>トレーニングコースの内容、製品の操作方法に関するご質問やお困りの場合は、</br>日本をはじめ世界中の開発者や経験者が参加する情報交換の場 <a href="https://forum.uipath.com/c/japan">UiPathフォーラム</a> をご利用いただけます</p>
+                <p>トレーニングコースの内容、製品の操作方法に関するご質問やお困りの場合は、</br>日本をはじめ世界中の開発者や経験者が参加する情報交換の場 <a
+                        href="https://forum.uipath.com/c/japan">UiPathフォーラム</a> をご利用いただけます</p>
                 <p>各種製品に関する詳細情報は、<a href="https://docs.uipath.com/lang-ja">UiPathドキュメンテーションポータル</a> をご活用ください</p>
                 <div class="start-right">
                     <a href="https://www.uipath.com/ja/academy/faq" class="start-btn font_14">Q&A はこちらへ</a>
@@ -178,10 +302,10 @@
             });
         });
 
-
-
-
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
 </body>
 
 </html>

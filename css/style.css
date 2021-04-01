@@ -477,6 +477,11 @@ width:100%;
     background-size: cover;
 }
 
+.orchestratornyuumon{
+    background-image: url(../images/orchestrator_nyuumon.png);
+    background-size: cover;
+}
+
 .reframework{
     background-image: url(../images/reframework.png);
     background-size: cover;
